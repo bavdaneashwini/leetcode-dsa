@@ -35,26 +35,6 @@ hash = flat_hash(input_dict)
 print(hash)    
 
 
-
-
-input_hash = {
-  "name" => "John",
-  "age" => 30,
-  "address" => {
-    "street" => "123 Main St",
-    "city" => "New York",
-    "state" => "NY",
-    "zip" => "10001",
-    "location" => {
-      "country" => "USA",
-      "coordinates" => {
-        "latitude" => 40.7128,
-        "longitude" => -74.0060
-      }
-    }
-  }
-}
-
 #Ruby function to flatten a nested hash
 
 def flatten_hash(input_hash, prefix = "")
