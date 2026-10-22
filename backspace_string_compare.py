@@ -25,12 +25,13 @@ def backspace_compare(s, t)
     def compare(word)
         stack = []
         word.each_char do |char|
-        if char == "#"
-            if stack.any?
-                stack.pop
+            if char == "#"
+                if stack.any?
+                    stack.pop
+                end
+            else
+                stack << char
             end
-        else
-            stack << char
         end
         stack.join
     end
